@@ -32,7 +32,6 @@ public class Projectile : MonoBehaviour
         for (int i = 1; i < 3; i++)
         {
             yield return new WaitForSeconds(0.15f);
-            Debug.Log("benis");
             Instantiate(flames, position + new Vector3(0.6f * i, 0.5f, 0), rotation);
             Instantiate(flames, position + new Vector3(-0.6f * i, 0.5f, 0), rotation);
         }
