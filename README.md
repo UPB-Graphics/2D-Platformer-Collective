@@ -1,7 +1,8 @@
-# _2D-Platformer-Collectivet
-Client for 2D-Platformer-Collective Project
-
-This repo is using GIT LFS (Large File System).
-
-## Contributing
-Fork repo and read [contributing](https://github.com/UPB-Graphics/2D-Platformer-Collective/blob/main/CONTRIBUTING.md) documentation.
+Main Menu Functionalitati :-Canvas and Panels
+ Text Mesh Pro
+ Colour Gradient for each button
+ Text to Button
+ Background and new scene 
+ Basic Options menu and Slider
+ Functionality
+ Added Actions to Buttons
