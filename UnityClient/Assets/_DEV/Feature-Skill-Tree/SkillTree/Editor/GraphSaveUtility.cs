@@ -53,10 +53,10 @@ namespace SkillTree
                 });
             }
 
-            if (!AssetDatabase.IsValidFolder("Assets/Resources"))
-                AssetDatabase.CreateFolder("Assets", "Resources");
+            if (!AssetDatabase.IsValidFolder("Assets/_DEV/Feature-Skill-Tree/Resources"))
+                AssetDatabase.CreateFolder("Assets/_DEV/Feature-Skill-Tree/", "Resources");
 
-            AssetDatabase.CreateAsset(skillTreeContainer, $"Assets/Resources/{filename}.asset");
+            AssetDatabase.CreateAsset(skillTreeContainer, $"Assets/_DEV/Feature-Skill-Tree/Resources/{filename}.asset");
             AssetDatabase.SaveAssets();
         }
 
