@@ -25,6 +25,12 @@ namespace PlatformerCollective.InventorySystem.Inventory
             Item = null;
             Quantity = 0;
         }
+
+        public ItemSlot(Item _item)
+        {
+            Item = _item;
+            Quantity = 0;
+        }
         
         /// <summary>
         /// Adds a quantity of a given item to the inventory slot.
@@ -82,7 +88,7 @@ namespace PlatformerCollective.InventorySystem.Inventory
             }
             else
             {
-                amountRemoved = Quantity - quantity;
+                amountRemoved = quantity;
             }
 
             Quantity -= amountRemoved;
