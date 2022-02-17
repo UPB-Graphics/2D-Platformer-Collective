@@ -1,0 +1,16 @@
+Asset-ul pentru iconite:
+https://assetstore.unity.com/packages/2d/gui/icons/fantasy-inventory-icons-free-143805
+
+
+Functionalitati Inventory:
+- background pentru inventory si iconite pentru obiecte
+- se poate seta numarul slot-urilor
+- la pickup se adauga obiectele in inventory daca mai este loc
+- obiectele pot fi folosite sau aruncate prin apasarea butoanelor 
+
+- clasa Inventory se ocupa de adaugarea/aruncarea obiectelor
+- clasa InventoryUi se ocupa de updatarea ui-ului
+- clasa InventorySlot se ocupa de sloturile din invetory (adaugarea iconitelor, stergerea lor, folosirea obiectelor)
+- clasa Item este un ScriptableObject cu care se pot face obiecte noi
+- clasa ItemPickup este pentru ridicarea obiectelor si adaugarea lor in inventory
+- clasa Interactable era pentru obiectele cu care se poate interactiona
