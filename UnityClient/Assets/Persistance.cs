@@ -10,6 +10,8 @@ public class Persistance
 
 	public static void Save(string key, string value)
 	{
+		if (key.IndexOf(":") != -1) return;
+
 		string filename = Application.persistentDataPath + savefile;
 		string line = $"{key}:{value}";
 		bool found = false;
@@ -45,6 +47,8 @@ public class Persistance
 	}
 	public static string Load(string key)
 	{
+		if (key.IndexOf(":") != -1) return null;
+
 		foreach (string line in File.ReadLines(Application.persistentDataPath + savefile))
 			if (line.StartsWith(key))
 				return line.Substring(key.Length + 1);
